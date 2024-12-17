@@ -866,6 +866,115 @@ El diseño limpio y estructurado permite al usuario localizar rápidamente la in
 </li>
 </ul>
 <hr>
+<h2 id="descripción-del-pdf-de-factura-generada-al-pagar">Descripción del PDF de Factura Generada al Pagar</h2>
+<p>Este PDF es generado automáticamente por el sistema de gestión de ventas de <strong>GAISEY RECORD FAIR</strong> después de completar una compra. Sirve como comprobante de venta para el cliente y facilita el seguimiento de transacciones.</p>
+<hr>
+<h3 id="ejemplo-visual-del-pdf-generado">Ejemplo Visual del PDF Generado</h3>
+<p>![PDF<br>
+(<a href="https://photos.app.goo.gl/33Yvjz7XNnPCHuTa7">https://photos.app.goo.gl/33Yvjz7XNnPCHuTa7</a>)</p>
+<hr>
+<h3 id="componentes-del-pdf">Componentes del PDF</h3>
+<ol>
+<li>
+<p><strong>Encabezado</strong>:</p>
+<ul>
+<li><strong>Nombre de la tienda</strong>:
+<ul>
+<li><strong>GAISEY RECORD FAIR</strong></li>
+</ul>
+</li>
+<li><strong>Teléfono de contacto</strong>:
+<ul>
+<li>Número de teléfono para consultas y soporte.</li>
+</ul>
+</li>
+<li><strong>Dirección</strong>:
+<ul>
+<li>Ubicación de la tienda en <strong>Oaxaca, México</strong>.</li>
+</ul>
+</li>
+<li><strong>Descripción del negocio</strong>:
+<ul>
+<li>Se indica que es una distribuidora de discos.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Datos del Cliente</strong>:<br>
+Sección reservada para capturar los datos del cliente que realiza la compra:</p>
+<ul>
+<li><strong>RFC</strong>: Registro Federal de Contribuyentes del cliente.</li>
+<li><strong>Nombre</strong>: Nombre completo del cliente.</li>
+<li><strong>Dirección</strong>: Dirección del cliente.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tabla de Productos Comprados</strong>:<br>
+La tabla muestra un desglose detallado de los productos adquiridos:</p>
+<ul>
+<li><strong>Código</strong>: Identificador único del producto.</li>
+<li><strong>Descripción</strong>: Nombre del producto (por ejemplo, el título del álbum).</li>
+<li><strong>Cantidad</strong>: Número de unidades compradas.</li>
+<li><strong>Precio Unitario (Precio U.)</strong>: Costo de una unidad del producto.</li>
+<li><strong>Precio Total (Precio T.)</strong>: Resultado de multiplicar la cantidad por el precio unitario.</li>
+</ul>
+</li>
+<li>
+<p><strong>Resumen de Pago</strong>:</p>
+<ul>
+<li><strong>Total a Pagar</strong>:
+<ul>
+<li>Muestra el monto total que debe pagar el cliente por la compra realizada.</li>
+<li>Ejemplo: <code>Total a Pagar: 200.00</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sección de Firma</strong>:</p>
+<ul>
+<li><strong>Cancelación y Firma</strong>:<br>
+Espacio para que el cliente o el encargado de la venta firme como confirmación de la transacción.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="funcionalidad-del-pdf">Funcionalidad del PDF</h3>
+<ul>
+<li>
+<p><strong>Generación Automática</strong>:<br>
+Se genera automáticamente al momento de realizar una venta y completar el pago en el sistema.</p>
+</li>
+<li>
+<p><strong>Propósito</strong>:</p>
+<ul>
+<li>Sirve como comprobante para el cliente.</li>
+<li>Permite llevar un registro digital de las ventas realizadas.</li>
+</ul>
+</li>
+<li>
+<p><strong>Formato Estandarizado</strong>:<br>
+La estructura del PDF facilita su lectura rápida y clara, con detalles organizados en secciones bien definidas.</p>
+</li>
+<li>
+<p><strong>Entrega Digital</strong>:<br>
+Puede enviarse automáticamente al correo electrónico del cliente mediante la función de envío de correos integrados en el sistema.</p>
+</li>
+</ul>
+<hr>
+<h3 id="notas-3">Notas</h3>
+<ul>
+<li>
+<p><strong>Cumplimiento Fiscal</strong>:<br>
+El diseño del PDF incluye los campos necesarios para cumplir con los requisitos fiscales y proporcionar información detallada para fines de facturación.</p>
+</li>
+<li>
+<p><strong>Personalización</strong>:<br>
+La información del cliente se rellena automáticamente desde la base de datos para asegurar precisión y evitar errores manuales.</p>
+</li>
+</ul>
+<hr>
 <h2 id="💻-tecnologías-utilizadas">💻 <strong>Tecnologías Utilizadas</strong></h2>
 <h2 id="resumen-de-clases-y-responsabilidades"><strong>Resumen de Clases y Responsabilidades</strong></h2>
 <h3 id="conexion"><strong>1. <code>Conexion</code></strong></h3>
